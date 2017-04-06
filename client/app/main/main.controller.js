@@ -76,7 +76,7 @@ angular.module('dweAdminApp')
     // }
      
 
-    $http.get(demourl + '/api/feedbacks').success(function(feedbacks){
+    $http.get(demourl + 'api/feedbacks').success(function(feedbacks){
 
         for(var i in feedbacks){
             delete feedbacks[i]['_id'];
@@ -92,7 +92,7 @@ angular.module('dweAdminApp')
         return ["DemoId", "Feedback Type", "Functionality", "Experience" ,"Comments","TimeStamp"];
     }
 
-     $http.get(demourl + '/api/troubleTickets').success(function(troubleTickets){
+     $http.get(demourl + 'api/troubleTickets').success(function(troubleTickets){
 
         for(var i in troubleTickets){
             delete troubleTickets[i]['_id'];
