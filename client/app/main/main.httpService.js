@@ -4,7 +4,7 @@ angular.module('dweAdminApp')
     .factory('httpService', ['$http', '$q', 
         function ($http, $q) {
         
-            var urlBase = 'http://localhost:9000';
+            var urlBase = 'http://137.116.170.146:9000';
             var service = {
                 dataRetrieved : [],
                 getData: getData

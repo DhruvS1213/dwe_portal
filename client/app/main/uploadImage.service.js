@@ -3,7 +3,7 @@
 angular.module('dweAdminApp')
     .factory('uploadImageService', ['$http', '$q', 
         function ($http, $q) {
-            var baseUrl = 'http://localhost:9000';
+            var baseUrl = 'http://137.116.170.146:9000';
             var uploadImageService = {
                 dataRetrieved : [],
                 postImageDetail : postImageDetail,

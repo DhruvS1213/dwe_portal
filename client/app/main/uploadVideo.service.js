@@ -4,7 +4,7 @@ angular.module('dweAdminApp')
     .factory('uploadVideoService', ['$http', '$q', 
         function ($http, $q) {
         
-            var baseUrl = 'http://localhost:9000';
+            var baseUrl = 'http://137.116.170.146:9000';
             var uploadVideo = {
                 dataRetrieved : [],
                 postVideo : postVideo,
