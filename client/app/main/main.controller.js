@@ -634,13 +634,13 @@ angular.module('dweAdminApp')
                 console.log( 'error in fetching contents' );
         });
 
-     $http.get( '/api/feedbacks' )
+     $http.get('api/feedbacks' )
             .then(function( feedbacks ) {
                 vm.feedbackObject = feedbacks;
                 console.log('content feedback',vm.feedbackObject);
             }); 
 
-     $http.get( '/api/troubleTickets' )
+     $http.get('api/troubleTickets' )
             .then(function( troubleTickets ) {
                 vm.troubleObject = troubleTickets;
                 console.log('content trouble',vm.troubleObject);
